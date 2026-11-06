@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f8f3;
+    color: #193b30;
+}
+
+header {
+    background: #193b30;
+    color: white;
+    padding: 22px;
+    text-align: center;
+}
+
+main {
+    max-width: 700px;
+    margin: 35px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.form-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.form-row > label,
+.field-label {
+    width: 190px;
+    padding-top: 9px;
+    flex-shrink: 0;
+}
+
+.form-row > input:not([type="file"]),
+.form-row select,
+.form-row textarea {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 0;
+    padding: 9px;
+    border: 1px solid #aab8ad;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.form-row textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 7px;
+}
+
+.radio-group label,
+.consent label {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.consent {
+    margin: 8px 0 20px 205px;
+}
+
+button,
+.button-link {
+    display: inline-block;
+    background: #285844;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 11px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button:hover,
+.button-link:hover {
+    background: #367354;
+}
+
+.message-box {
+    padding: 12px;
+    background: #f4f8f3;
+    border: 1px solid #d5e2d7;
+    border-radius: 5px;
+    white-space: normal;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    main {
+        margin: 15px;
+        padding: 18px;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .form-row > label,
+    .field-label {
+        width: auto;
+        padding-top: 0;
+    }
+
+    .consent {
+        margin-left: 0;
+    }
+}
